@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('taj hotel patna.jpg'); /* Ensure the image URL is correct */
+            background-size:cover; /* Cover the entire viewport */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; /* Make sure the background is fixed while scrolling */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align the content at the top */
+            color: white; /* Text color for better contrast against the image */
+        }
+        /* Form Styling */
+        .form {
+            background-color: rgba(164, 115, 8, 0.327); /* Slight transparency for better background blending */
+            padding: 75px;
+            border-radius: 80px;
+           position:absolute;
+            box-shadow: 0 4px 8px rgb(240, 3, 3);
+            width: 20%;
+            height: 450px;
+            margin-top: 118px;  /*Spacing from the h1 tag */
+            /* margin-bottom: 10px; */
+            margin-right: 65%; ;
+        }
+
+        label {
+            display: block;
+            font-size: 25px;
+            margin-bottom: 2px;
+            color: #0b0606f2;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #2196F3;
+            box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+        }
+
+        /* Button Styling */
+        /* input[type="submit"] { */
+        button{
+            width: 50%;
+            padding: 12px;
+            background-color: rgba(236, 202, 9, 0.36);
+            color: #fbfafa;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #efba09;
+        }
+
+            input[type="text"] {
+                padding: 2px;
+                font-size: 17px;
+            }
+
+            input[type="submit"] {
+                padding: 10px;
+                font-size: 18px;
+            }
+    h1{
+        text-align:right;
+        color: #efba09;
+        margin-top: 36px;
+        margin-right: 1000PX;
+        font-size: 40px;
+    }
+    a{
+        color: #f9f9f9;
+    }
+        
+    </style>
+</head>
+<body>
+    <h1>BOOKING REGISTRATION </h1>
+   
+    <div class="form">
+        <form action=""> 
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" required><br>
+            <label for="phone">Phone No. :</label>
+            <input type="text" name="phone" required><br>
+            <label for="bookingDate">Booking Date:</label>
+            <input type="text" name="bookingDate" required><br>
+            <label for="checkIn">Check-in Date:</label>
+            <input type="text" name="checkIn" required><br> 
+            <label for="checkOut">Check-out Date:</label>
+            <input type="text" name="checkOut" required><br>
+            <button type="submit">👉Submit</button><br>
+            <a href="login page.html">Already Registered Login</a>
+        </form>
+    </div> 
+</body>
+</html>
